@@ -1,0 +1,60 @@
+﻿<Window x:Class="MVVM.View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM"
+        mc:Ignorable="d"
+        Title="TBall Registation" Height="350" Width="340" Padding="20">
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Player's First Name: " 
+               VerticalAlignment="Center" HorizontalContentAlignment="Right"/>
+
+        <TextBox  Grid.Row="0" Grid.Column="1"  Text="{Binding Model.FirstName, Mode=TwoWay}"   BorderThickness="1" Height="25"  />
+        
+        <Label Grid.Row="1" Grid.Column="0" Content="Player's Last Name: " VerticalAlignment="Center"
+               HorizontalContentAlignment="Right"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Model.LastName, Mode=TwoWay}"  BorderThickness="1" Height="25"  />
+        <Label Grid.Row="2" Grid.Column="0" Content="Player's Birth Date: " VerticalAlignment="Center"
+               HorizontalContentAlignment="Right"/>
+        <DatePicker Grid.Row="2" Grid.Column="1" Text="{Binding Model.BirthDate}" Height="25" />
+        <Label Grid.Row="3" Grid.Column="0" Content="Bats: " VerticalAlignment="Center"
+               HorizontalContentAlignment="Right"/>
+        <StackPanel  Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+            <RadioButton Content="Left" IsChecked="{Binding Model.BatsLeft}" Command="{Binding OnLeftBatsClick}"
+                         GroupName="Bats" VerticalAlignment="Center" />
+            <RadioButton Content="Right" IsChecked="{Binding IsBatRight}" Command="{Binding OnLeftBatsClick}"
+                         GroupName="Bats" VerticalAlignment="Center"  Margin="5,0,0,0"/>
+        </StackPanel>
+        <Label Grid.Row="4" Grid.Column="0" Content="Throws: " VerticalAlignment="Center"
+               HorizontalContentAlignment="Right"/>
+        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
+            <RadioButton Content="Left" IsChecked="{Binding Model.ThrowsLeft}" Command="{Binding OnLeftThrowsClick}"
+                         GroupName="Throws" VerticalAlignment="Center"/>
+            <RadioButton Content="Right" IsChecked="{Binding IsThrowRight}"  Command="{Binding OnRightThrowsClick}"
+                         GroupName="Throws" VerticalAlignment="Center" Margin="5,0,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Save" Height="30" Width="50" />
+            <Button Content="Cancel" IsCancel="True"  Height="30" Width="50" Margin="8,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
+

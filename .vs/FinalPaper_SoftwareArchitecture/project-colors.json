@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9b402e02-76d0-4790-b4cd-2c0586c7193d": {
+      "ProjectGuid": "9b402e02-76d0-4790-b4cd-2c0586c7193d",
+      "DisplayName": "DataProvider",
+      "ColorIndex": 0
+    },
+    "f3c7058c-47e9-4b46-a8cf-e81e93abd124": {
+      "ProjectGuid": "f3c7058c-47e9-4b46-a8cf-e81e93abd124",
+      "DisplayName": "FinalPaper_SoftwareArchitecture",
+      "ColorIndex": 1
+    },
+    "a56b363f-e33e-4d06-ba87-b285f5427818": {
+      "ProjectGuid": "a56b363f-e33e-4d06-ba87-b285f5427818",
+      "DisplayName": "MVC",
+      "ColorIndex": 2
+    },
+    "22f4038a-bc73-4f5f-a127-6ea8c0a9b626": {
+      "ProjectGuid": "22f4038a-bc73-4f5f-a127-6ea8c0a9b626",
+      "DisplayName": "MVVM",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "795c8115-72bc-446d-8537-fbe673c23cdc": {
+      "ProjectGuid": "795c8115-72bc-446d-8537-fbe673c23cdc",
+      "DisplayName": "ArchitectureTests",
+      "ColorIndex": 4
+    },
+    "c3283255-5ef5-433e-bc66-1c73741e926f": {
+      "ProjectGuid": "c3283255-5ef5-433e-bc66-1c73741e926f",
+      "DisplayName": "ArchitectureUnitTests",
+      "ColorIndex": 5
+    },
+    "9dc9bb73-9474-4d22-a3a6-ebf285a9f1d0": {
+      "ProjectGuid": "9dc9bb73-9474-4d22-a3a6-ebf285a9f1d0",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}
